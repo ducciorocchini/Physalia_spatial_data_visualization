@@ -6,7 +6,7 @@
 + Time series: Ridgeline plots
 
 ## Day 2
-+ Species distributions: cartograms, overlap (npj paper)
++ Species distributions: cartograms, overlap (npj paper), bivariate maps
 
 ## Day 3
 + Colorblindness
