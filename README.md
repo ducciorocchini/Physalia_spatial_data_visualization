@@ -6,7 +6,10 @@
 + Time series: Ridgeline plots
 
 ## Day 2
-+ Species distributions: cartograms, overlap (npj paper), bivariate maps
++ Spatial distributions:
+   + Species distributions: cartograms, overlap (npj paper), bivariate maps
+   + Spatial interpolation in R
+   + Scatterplot matrices
 
 ## Day 3
 + Colorblindness
