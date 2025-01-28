@@ -8,8 +8,9 @@
 ## Day 2
 + Spatial distributions:
    + Species distributions: cartograms, overlap (npj paper), bivariate maps
-   + Spatial interpolation in R
+   + Spatial density maps in R
    + Scatterplot matrices
++ Virtual spesies (code virtual_species_sdm)
 
 ## Day 3
 + Colorblindness
