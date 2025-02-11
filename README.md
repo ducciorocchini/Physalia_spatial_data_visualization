@@ -1,6 +1,6 @@
 # Spatial data visualization 
 
-## Day 1: vector and raster data
+## Day 1: Showing sptaial distribution of species
 + Spatial distributions:
    + Species distributions: cartograms, overlap (npj paper), bivariate maps
    + Spatial density maps in R
@@ -12,10 +12,10 @@
 + Multivariate analysis
 + Time series: Ridgeline plots
 
-## Day 3
+## Day 3: Colorblindness
 + Colorblindness
 
-## Day 4
+## Day 4: Spatial data reporting
 + Markdown and LaTex
 
 ## Bonus sessions:
