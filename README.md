@@ -2,9 +2,10 @@
 
 ## Day 1: Showing sptaial distribution of species
 + Spatial distributions:
-   + Species distributions: cartograms (code ready), overlap (npj paper), bivariate maps
+   + Species distributions: cartograms (code ready), overlap (npj paper, colorist package), bivariate maps
    + Spatial density maps in R
    + Scatterplot matrices (code ready)
++ Simulating spatial distribution of species in data cubes: the gcube package (code ready)
 + Virtual spesies (code virtual_species_sdm)
 
 ## Day 2: RS data
