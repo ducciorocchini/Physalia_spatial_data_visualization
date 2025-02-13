@@ -4,7 +4,7 @@
 + Spatial distributions:
    + Species distributions: cartograms, overlap (npj paper), bivariate maps
    + Spatial density maps in R
-   + Scatterplot matrices
+   + Scatterplot matrices (code ready)
 + Virtual spesies (code virtual_species_sdm)
 
 ## Day 2: RS data
