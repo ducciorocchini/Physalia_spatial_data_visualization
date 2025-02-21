@@ -13,6 +13,7 @@
 + Spatial Variability: distance based versus abundance based measures
 + Multivariate analysis
 + Temporal variability: Ridgeline plots
++ Scatterplots of remote sensing data and hexagon binning
 
 ## Day 3: Colorblindness
 + Problems related to scientific graphs and colorblindness 
