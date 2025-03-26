@@ -2,7 +2,12 @@
 This course provides an exploration of spatial data analysis techniques in the context of ecology, with a focus on visualizing spatial amtrices and point patterns, and addressing accessibility challenges in scientific visualization. Participants will gain hands-on experience with R tools and packages for spatial analysis, focusing on practical applications in ecological studies.
 
 # Requirements
+## No previous experience
 This is a basic course devoted to spatial visualization. No specific requirements are needed. Prveious experience with R is not mandatory.  
+
+## Packages needed
++ geodata
+
 
 # Learning Outcomes
 
