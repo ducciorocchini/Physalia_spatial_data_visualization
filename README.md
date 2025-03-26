@@ -7,7 +7,7 @@ This is a basic course devoted to spatial visualization. No specific requirement
 
 ## Packages needed
 + geodata
-
++ virtualspecies
 
 # Learning Outcomes
 
