@@ -10,8 +10,12 @@ This is a basic course devoted to spatial visualization. No specific requirement
 + imageRy
 + ggplot2
 + viridis
-+ geodata
++ geodata 
 + virtualspecies
++ biscale (for bivariate maps)
++ gclus (for scatterplot matrices)
++ GGally (for scatterplot matrices)
++ gpairs (for scatterplot matrices)
 
 # Learning Outcomes
 
