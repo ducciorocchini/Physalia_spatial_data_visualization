@@ -6,6 +6,10 @@ This course provides an exploration of spatial data analysis techniques in the c
 This is a basic course devoted to spatial visualization. No specific requirements are needed. Prveious experience with R is not mandatory.  
 
 ## Packages needed
++ terra
++ imageRy
++ ggplot2
++ viridis
 + geodata
 + virtualspecies
 
