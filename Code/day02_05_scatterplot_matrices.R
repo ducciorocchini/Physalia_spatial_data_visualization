@@ -30,6 +30,8 @@ iris$Long.Petal<-as.factor(ifelse(iris$Petal.Length>median(iris$Petal.Length), "
 
 ggpairs(iris)
 
-
+# function ggcorr in "ggplot2"
+library(ggplot2)
+ggcorr(iris)
 
 
