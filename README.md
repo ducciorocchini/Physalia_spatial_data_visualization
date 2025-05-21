@@ -5,18 +5,26 @@ This course provides an exploration of spatial data analysis techniques in the c
 ## No previous experience
 This is a basic course devoted to spatial visualization. No specific requirements are needed. Prveious experience with R is not mandatory.  
 
+
 ## Packages needed
 + terra
 + imageRy
 + ggplot2
 + viridis
-+ geodata 
++ geodata (for virtual species)
 + virtualspecies
 + biscale (for bivariate maps)
 + gclus (for scatterplot matrices)
 + GGally (for scatterplot matrices)
 + gpairs (for scatterplot matrices)
-
++ cartogram
++ sf (for cartograms)
++ tmap (for cartograms)
++ colorist (for niche overlap)
++ biscale (for bivariate maps)
++ cowplot  (for the ggdraw function in ivariate maps code)
++ spatstat (for density maps)
+  
 # Learning Outcomes
 
 By the end of this course, participants will be able to:
