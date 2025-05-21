@@ -35,12 +35,11 @@ densitymap <- density(bei)
 plot(densitymap, col=magma(100))
 points(bei, cex=.2, col="yellow")
 
-
 # multiframe
 par(mfrow=c(1,3))
 plot(bei)
 plot(densitymap)
-plot(elev)
+plot(elevation)
 
 
 
