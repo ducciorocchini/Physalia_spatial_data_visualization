@@ -7,6 +7,8 @@ library(geodata)
 # Import data
 worldclim <- worldclim_global(var = "bio", res = 10,
                               path = tempdir())
+# wait for it, it might require some time.
+
 # Rename bioclimatic variables for simplicity
 names(worldclim) <- paste0("bio", 1:19)
 
@@ -34,13 +36,6 @@ my.first.species
 ## - Environmental suitability formula = bio1 * bio12
 ## - Environmental suitability was rescaled between 0 and 1
 
-my.parameters <- formatFunctions(bio1 = c(fun = 'dnorm', mean = 25, sd = 5),
-                                 bio12 = c(fun = 'dnorm', mean = 4000, sd = 2000))
-
-new.species <- generateSpFromFun(raster.stack = worldclim[[c("bio1", "bio12")]],
-                                 parameters = my.parameters,
-                                 formula = "2 * bio1 + bio12",
-                                 plot = TRUE)
 
 # changing parameters
 
