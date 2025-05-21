@@ -28,6 +28,6 @@ legend <- bi_legend(pal = "GrPink",
                     size = 8)
 
 # combine map with legend
-finalPlot <- ggdraw() +
+ggdraw() +
   draw_plot(map, 0, 0, 1, 1) +
   draw_plot(legend, 0.2, .65, 0.2, 0.2)
