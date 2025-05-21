@@ -40,27 +40,26 @@ By the end of this course, participants will be able to:
    - Design colorblind friendly visualizations and ensure accessibility in spatial data representations.
 
 # Program
-## Day 1: Spatial matrices
+## Day 1: Spatial matrices 🚩
 + Visualizing ecosystems through remote sensing data: RGB plotting and proper use of ggplot2 with raster matrices
 + Spatial Variability: distance based versus abundance based measures
 + Multivariate analysis
 + Temporal variability: Ridgeline plots
 + Scatterplots of remote sensing data and hexagon binning
   
-## Day 2: Point patterns
+## Day 2: Point patterns 🚩
 + Spatial distributions:
    + Species distributions: cartograms, overlap, bivariate maps
-   + Spatial density maps in R
+   + Spatial density maps in R 
    + Scatterplot matrices 
-+ Simulating spatial distribution of species in data cubes: the gcube package
 + Virtual spesies
   
-## Day 3: Colorblindness
+## Day 3: Colorblindness 🚩
 + Problems related to scientific graphs and colorblindness
 + tidyverse
 
 <!-- ## Day 4: Spatial data reporting -->
 <!-- + Markdown and LaTex: doc and presentation reporting -->
 
-#
+
 
