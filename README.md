@@ -11,6 +11,7 @@ This is a basic course devoted to spatial visualization. No specific requirement
 + imageRy
 + ggplot2
 + viridis
++ RStoolbox (for tidyverse related functions)
 + geodata (for virtual species)
 + virtualspecies
 + biscale (for bivariate maps)
@@ -49,10 +50,10 @@ By the end of this course, participants will be able to:
 
 # Program
 ## Day 1: Spatial matrices 🚩
-+ Visualizing ecosystems through remote sensing data: RGB plotting and proper use of ggplot2 with raster matrices
++ Visualizing ecosystems through remote sensing data: RGB plotting and [tidyverse](https://www.tidyverse.org/packages/) ggplot2 with raster matrices
 + Spatial Variability: distance based versus abundance based measures
 + Multivariate analysis
-+ Temporal variability: Ridgeline plots
++ Temporal variability: [tidyverse](https://www.tidyverse.org/packages/) based ridgeline plots
 + Scatterplots of remote sensing data and hexagon binning
   
 ## Day 2: Point patterns 🚩
@@ -64,7 +65,7 @@ By the end of this course, participants will be able to:
   
 ## Day 3: Colorblindness 🚩
 + Problems related to scientific graphs and colorblindness
-+ tidyverse
+
 
 <!-- ## Day 4: Spatial data reporting -->
 <!-- + Markdown and LaTex: doc and presentation reporting -->
