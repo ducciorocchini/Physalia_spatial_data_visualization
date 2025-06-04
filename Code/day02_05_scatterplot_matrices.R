@@ -14,7 +14,7 @@ pairs(Seatbelts)
 # Coloring points by different level of variable "law"
 pairs(Seatbelts.df[,1:7], col=ifelse(Seatbelts.df$law==0, "black", "red"))
 
-# changing shape of points
+# changing shape of scatterplots
 pairs(Seatbelts.df[,1:7],pch=ifelse(Seatbelts.df$law==0, 1,3), upper.panel = NULL)
 
 ## Loading required package: cluster
