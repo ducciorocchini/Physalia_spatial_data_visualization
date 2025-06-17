@@ -1,37 +1,38 @@
-# https://jtr13.github.io/spring19/Community_Contribution_Group16.html
-# change with ecological data from vegan
+### Multipanel in R: the second lecture of monitoring Ecosystems
 
-library(gclus)
+install.packages("sp")
+install.packages("GGally") # this is used for the function ggpairs()
+
+library(sp) # require(sp) will also do the job
 library(GGally)
 
-data("Seatbelts")
-Seatbelts.df <- as.data.frame(Seatbelts)
+data(meuse) # there is a dataset available named meuse
 
-# Part 1: Plotting the pure scatterplot matrix
-# pairs from Base R
-pairs(Seatbelts)
+attach(meuse)
 
-# Coloring points by different level of variable "law"
-pairs(Seatbelts.df[,1:7], col=ifelse(Seatbelts.df$law==0, "black", "red"))
+# Exercise: see the names of the variables and plot cadmium versus zinc
+# There are two ways to se the names of the variables:
+names(meuse)
+head(meuse)
+plot(cadmium,zinc,pch=15,col="red",cex=2)
 
-# changing shape of scatterplots
-pairs(Seatbelts.df[,1:7],pch=ifelse(Seatbelts.df$law==0, 1,3), upper.panel = NULL)
+# Exercise: make all the possible paiwis plots of the dataset
+# plot(x,cadmium)
+# plot(x,zinc)
+# plot....
+# plot is not a good idea!
+pairs(meuse)
 
-## Loading required package: cluster
-sb.cor <- cor(Seatbelts.df)
-# assign color
-sb.color <- dmat.color(sb.cor)
-# assign order
-sb.o <- order.hclust(sb.cor)
-cpairs(Seatbelts, order= sb.o,panel.color= sb.color,upper.panel=NULL)
+# in case you receive the error "the sizze is too large" reshape with the mouse the graph window and relaunch the code
 
-# Part 2: The GG family
-iris$Long.Petal<-as.factor(ifelse(iris$Petal.Length>median(iris$Petal.Length), "long", "short"))
+pairs(~ cadmium + copper + lead + zinc, data=meuse)
 
-ggpairs(iris)
+pairs(meuse[,3:6])
 
-# function ggcorr in "ggplot2"
-library(ggplot2)
-ggcorr(iris)
+# Exercise: prettify this graph
+pairs(meuse[,3:6], col="red", pch=18, cex=1.5)
+
+# GGally package will prettify the graph
+ggpairs(meuse[,3:6])
 
 
