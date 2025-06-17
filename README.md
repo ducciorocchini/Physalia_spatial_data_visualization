@@ -58,8 +58,8 @@ By the end of this course, participants will be able to:
   
 ## Day 2: Vectors: distributions and point patterns 🚩
 + Spatial distributions:
-   + Spatial density maps in R 
    + Scatterplot matrices 
+   + Spatial density maps in R 
    + Species distributions: overlap, cartograms, bivariate maps
 + Virtual spesies
   
