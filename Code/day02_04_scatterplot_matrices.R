@@ -5,6 +5,7 @@ install.packages("GGally") # this is used for the function ggpairs()
 
 library(sp) # require(sp) will also do the job
 library(GGally)
+library(gclus) # final clusters
 
 data(meuse) # there is a dataset available named meuse
 
@@ -34,5 +35,25 @@ pairs(meuse[,3:6], col="red", pch=18, cex=1.5)
 
 # GGally package will prettify the graph
 ggpairs(meuse[,3:6])
+
+# ggcorr
+ggcorr(meuse[,3:6])
+
+
+## Loading required package: gclus
+# make the corelation
+sb.cor <- cor(meuse[,3:6])
+
+# assign color
+sb.color <- dmat.color(sb.cor)
+# dmat.color assigns three colours to the correlations according to the correlation magnitude. High correlations are in pink, the middle third are in blue, and the botom third are in yellow.
+
+# assign order
+sb.o <- order.hclust(sb.cor)
+
+# make the plot
+cpairs(meuse[,3:6], order= sb.o,panel.color= sb.color,upper.panel=NULL)
+
+
 
 
