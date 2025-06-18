@@ -15,7 +15,7 @@ map <- ggplot() +
   geom_sf(data = data, mapping = aes(fill = bi_class), color = "white", size = 0.1, show.legend = FALSE) +
   bi_scale_fill(pal = "GrPink", dim = 3) +
   labs(
-    title = "Race and Income in St. Louis, MO",
+    title = "Income in St. Louis, MO",
     subtitle = "Gray Pink (GrPink) Palette"
   ) +
   bi_theme()
