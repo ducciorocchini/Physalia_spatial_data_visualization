@@ -56,7 +56,7 @@ By the end of this course, participants will be able to:
 + Temporal variability: [tidyverse](https://www.tidyverse.org/packages/) based ridgeline plots
 + Scatterplots of remote sensing data and hexagon binning
   
-## Day 2: Vectors: distributions and point patterns 🚩
+## Day 2: Distributions and point patterns 🚩
 + Spatial distributions:
    + Scatterplot matrices 
    + Spatial density maps in R 
