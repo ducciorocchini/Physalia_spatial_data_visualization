@@ -23,7 +23,7 @@ map <- ggplot() +
 # legend
 legend <- bi_legend(pal = "GrPink",
                     dim = 3,
-                    xlab = "Higher % White ",
+                    xlab = "Higher Education ",
                     ylab = "Higher Income ",
                     size = 8)
 
