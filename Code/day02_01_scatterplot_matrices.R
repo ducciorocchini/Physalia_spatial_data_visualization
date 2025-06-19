@@ -27,6 +27,50 @@ library(ggplot2)
   ggplot() + 
     geom_sf(data = nc[1:20, ])
 
+# Scatterplots
+
+nc_df <- st_drop_geometry(nc)
+
+# Select columns
+cols <- c("AREA", "PERIMETER", "CNTY_")
+nc_df_subset <- nc_df[, cols]
+
+# Histograms on one var
+
+ggplot(nc_df_subset, aes(x = AREA)) +
+  geom_histogram(
+    aes(y = ..density.., fill = ..count..),
+    bins = 20,
+    color = "black",
+    alpha = 0.85
+  ) 
+
+# Adding density
+
+ggplot(nc_df_subset, aes(x = AREA)) +
+  geom_histogram(
+    aes(y = ..density.., fill = ..count..),
+    bins = 20,
+    color = "black",
+    alpha = 0.85
+  ) +
+geom_density(color = "darkblue", size = 1.2) +
+scale_fill_viridis_c(option = "viridis")
+
+
+# pairs()
+pairs(nc_df_subset)
+
+# ggpairs()
+library(GGally)
+ggpairs(nc_df_subset)
+
+# Plotting area and perimeter per county as a factor
+
+ggplot(nc_df_subset, aes(x = PERIMETER, y = AREA, color = as.factor(CNTY_))) +
+  geom_point(size = 4) +
+  scale_color_viridis_d(option = "viridis") 
+
 
 
 ############# RASTER
