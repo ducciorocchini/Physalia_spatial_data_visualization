@@ -31,9 +31,6 @@ im.plotRGB(sent, r=3, g=1, b=2, title="NIR on red component")
 nir <- sent[[1]]
 focal(nir, w=c(3,3), fun=sd)
 
-# In some cases previous versions of terra do not accept var, hence:
-var3 <- focal(nir, w = c(3,3), fun = function(x) var(x, na.rm = TRUE))
-
 
 sd3 <- focal(nir, matrix(1/9, 3, 3), fun=sd)
 plot(sd3)
@@ -42,6 +39,11 @@ im.ggplot(sd3)
 
 var3 <- focal(nir, matrix(1/9, 3, 3), fun=var)
 plot(var3)
+
+# In some cases previous versions of terra do not accept var, hence:
+var3 <- focal(nir, w = c(3,3), fun = function(x) var(x, na.rm = TRUE))
+
+
 
 par(mfrow=c(1,2))
 plot(sd3)
