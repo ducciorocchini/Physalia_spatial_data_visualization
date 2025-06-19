@@ -1,4 +1,36 @@
-### Multipanel in R: the second lecture of monitoring Ecosystems
+############# VECTOR
+
+library(sf)
+nc <- st_read(system.file("shape/nc.shp", package="sf"))
+
+plot(nc)
+
+# Mapping NC counties
+
+library(ggplot2)
+ggplot() + 
+  geom_sf(data = nc)
+
+
+# Calculating area
+
+nc$area <- st_area(nc)
+nc$areakm2 <- nc$area/1000000
+
+# Order counties by area
+
+nc <- nc[order(nc$areakm2, decreasing = TRUE), ]
+
+# Visualize counties iwth hugher areas
+
+library(ggplot2)
+  ggplot() + 
+    geom_sf(data = nc[1:20, ])
+
+
+
+############# RASTER
+### Multipanel in R
 
 install.packages("sp")
 install.packages("GGally") # this is used for the function ggpairs()
