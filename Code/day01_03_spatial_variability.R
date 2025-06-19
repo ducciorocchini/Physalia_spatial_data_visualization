@@ -32,7 +32,7 @@ nir <- sent[[1]]
 focal(nir, w=c(3,3), fun=sd)
 
 # In some cases previous versions of terra do not accept var, hence:
-ar3 <- focal(nir, w = c(3,3), fun = function(x) var(x, na.rm = TRUE))
+var3 <- focal(nir, w = c(3,3), fun = function(x) var(x, na.rm = TRUE))
 
 
 sd3 <- focal(nir, matrix(1/9, 3, 3), fun=sd)
