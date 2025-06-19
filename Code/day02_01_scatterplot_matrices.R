@@ -1,6 +1,8 @@
 ############# VECTOR
 
+library(terra)
 library(sf)
+
 nc <- st_read(system.file("shape/nc.shp", package="sf"))
 
 plot(nc)
@@ -71,7 +73,22 @@ ggplot(nc_df_subset, aes(x = PERIMETER, y = AREA, color = as.factor(CNTY_))) +
   geom_point(size = 4) +
   scale_color_viridis_d(option = "viridis") 
 
+## Ratsreizing vector data
 
+# Convert to SpatVector (terra format)
+nc_vect <- vect(nc)
+
+# Create an empty raster template based on the extent of the vector
+r_template <- rast(nc_vect, resolution = 0.1)  # Adjust resolution as needed
+
+# Rasterize a specific attribute (e.g., AREA)
+r_area <- rasterize(nc_vect, r_template, field = "AREA")
+
+# Plot to check
+plot(r_area, main = "Rasterized AREA from nc dataset")
+
+# Any command applied to raster data that we have seen previously can now be applied to any vector data
+imageRy::im.ridgeline(r_area, scale=1)
 
 ############# RASTER
 ### Multipanel in R
