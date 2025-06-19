@@ -29,7 +29,11 @@ im.plotRGB(sent, r=3, g=1, b=2, title="NIR on red component")
 # variance: sd^2
 
 nir <- sent[[1]]
-focal(nir, matrix(1/9,3,3), fun=sd)
+focal(nir, w=c(3,3), fun=sd)
+
+# In some cases previous versions of terra do not accept var, hence:
+ar3 <- focal(nir, w = c(3,3), fun = function(x) var(x, na.rm = TRUE))
+
 
 sd3 <- focal(nir, matrix(1/9, 3, 3), fun=sd)
 plot(sd3)
