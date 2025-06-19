@@ -13,7 +13,6 @@ library(ggplot2)
 ggplot() + 
   geom_sf(data = nc)
 
-
 # Calculating area
 
 nc$area <- st_area(nc)
@@ -23,11 +22,23 @@ nc$areakm2 <- nc$area/1000000
 
 nc <- nc[order(nc$areakm2, decreasing = TRUE), ]
 
-# Visualize counties iwth hugher areas
+# Visualize counties with hugher areas
 
 library(ggplot2)
   ggplot() + 
     geom_sf(data = nc[1:20, ])
+
+# Visualize different areas
+
+> # Plot using ggplot2
+ ggplot(nc) +
+  geom_sf(aes(fill = AREA), color = "white", size = 0.2) +
+  scale_fill_viridis_c(option = "C", direction = -1) +
+  labs(
+    title = "North Carolina County Areas",
+    subtitle = "Visualized using the sf package",
+    fill = "Area (km²)"
+   ) 
 
 # Scatterplots
 
